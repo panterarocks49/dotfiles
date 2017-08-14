@@ -1,39 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_comb.c                                    :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jbrown <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/09 18:04:48 by jbrown            #+#    #+#             */
-/*   Updated: 2017/08/09 22:08:33 by jbrown           ###   ########.fr       */
+/*   Created: 2017/08/09 21:08:29 by jbrown            #+#    #+#             */
+/*   Updated: 2017/08/10 13:21:08 by jbrown           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_print_comb(void)
-{
-	char i;
-	char j;
-	char k;
+#include <unistd.h>
 
-	i = '0' - 1;
-	while (++i <= '9')
-	{
-		j = i;
-		while (++j <= '9')
-		{
-			k = j;
-			while (++k <= '9')
-			{
-				ft_putchar(i);
-				ft_putchar(j);
-				ft_putchar(k);
-				if (i != '7' || j != '8' || k != '9')
-				{
-					ft_putchar(',');
-					ft_putchar(' ');
-				}
-			}
-		}
-	}
-}
+int		ft_putchar(char c)
+{
+	write(1, &c, 1);
+	return (0);
+}			  

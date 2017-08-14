@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jbrown <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/09 16:47:50 by jbrown            #+#    #+#             */
-/*   Updated: 2017/08/09 21:27:31 by jbrown           ###   ########.fr       */
+/*   Created: 2017/08/13 01:47:24 by jbrown            #+#    #+#             */
+/*   Updated: 2017/08/13 15:28:32 by jbrown           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_print_reverse_alphabet(void)
-{
-	int a;
-	int z;
+#include "ft_putchar.c"
+#include "sastantua.c"
+#include <stdlib.h>
 
-	a = 'a';
-	z = 'z';
-	while (a <= z)
-	{
-		ft_putchar(z);
-		z--;
-	}
+int main(void)
+{
+	int size;
+
+	size = 4;
+	sastantua(size);
+
+	return (0);
 }

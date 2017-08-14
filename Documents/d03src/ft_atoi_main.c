@@ -8,11 +8,10 @@
 
 int main(void)
 {
-	char str[] = " -2147483650";
+	char str[] = "\n +42f42";
 	int ai = atoi(str);
 	int ft_ai = ft_atoi(str);
 	ft_putnbr(ai);
-	printf("%d", ai);
 	ft_putchar('\n');
 	ft_putnbr(ft_ai);
 	ft_putchar('\n');

@@ -12,7 +12,7 @@ int main(void)
 	clock_t end;
 	long double cpu_time_used;
 
-	fact = 15;
+	fact = 13;
 	start = clock();
 	fact = ft_recursive_factorial(fact);
 	end = clock();

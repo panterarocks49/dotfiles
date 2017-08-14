@@ -1,4 +1,4 @@
-#include "../ex09/ft_sort_integer_table.c"
+#include "../verif/ex09/ft_sort_integer_table.c"
 #include "ft_putchar.c"
 #include "ft_putnbr.c"
 #include "ft_putstr.c"

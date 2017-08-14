@@ -1,4 +1,4 @@
-#include "../d04/ex00/ft_iterative_factorial.c"
+#include "../d04-verif/ft_iterative_factorial.c"
 #include "ft_putchar.c"
 #include "ft_putnbr.c"
 #include "ft_putstr.c"
@@ -12,7 +12,7 @@ int main(void)
 	clock_t end;
 	long double cpu_time_used;
 
-	fact = 13;
+	fact = 0;
 	start = clock();
 	fact = ft_iterative_factorial(fact);
 	end = clock();
